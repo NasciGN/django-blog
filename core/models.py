@@ -3,8 +3,8 @@ from tinymce import models as tinymce_models
 
 
 class Cargo(models.Model):
-    name = models.CharField(max_length=40)
-    description = models.CharField(max_length=120)
+    name = models.CharField(max_length=40, verbose_name='Nome')
+    description = models.CharField(max_length=120, verbose_name='Descrição')
 
     class Meta:
         verbose_name = 'Cargo'
